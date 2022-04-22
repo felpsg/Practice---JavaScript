@@ -1,17 +1,26 @@
 let raceNumber = Math.floor(Math.random() * 1000);
-let registroDosCorredores = true;
-const idadeCorredores = 18;
 
-if(idadeCorredores && registroDosCorredores > 18){
-raceNumber += 1000;
-} 
-if (idadeCorredores && registroDosCorredores > 18){
-  console.log(`A corrida começara as 09:30, e o numero da corrida é ${raceNumber}`);
-}
-else if (!idadeCorredores && registroDosCorredores > 18){
-  console.log(`A corrida começara as 11:00, caso contrário, se o corredor tiver mais de 18 anos E não se inscreveu antes, eles correrão às ${raceNumber}`);
-}
-else if (idadeCorredores < 18){
-  console.log(`A corrida começara as 12:00, caso contrário, se o corredor tiver mais de 18 anos E não se inscreveu antes, eles correrão às ${raceNumber}`);
+let corredorAntecipado = true;
+let idadeCorredor = 20;
+
+if (corredorAntecipado && idadeCorredor > 18) {
+  raceNumber += 1000;
 }
 
+if (corredorAntecipado && idadeCorredor > 18) {
+  console.log(
+    `Para corredores com mais de 18 anos que se inscreveram antecipadamente, correrão às 9h30 pelo numero: ${raceNumber}`
+  );
+} else if (!corredorAntecipado && !idadeCorredor > 18) {
+  console.log(
+    `Adultos atrasados ​​correm às 11:00 da manhã pelo numeoro: ${raceNumber}.`
+  );
+} else if (idadeCorredor < 18) {
+  console.log(
+    `Os jovens inscritos correm às 12h30, pelo numero: ${raceNumber}`
+  );
+} else {
+  console.log(
+    "Atente-se a sua mesa de registro corredores exatamente com 18 anos!"
+  );
+}
