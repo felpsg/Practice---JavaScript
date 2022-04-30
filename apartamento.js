@@ -5,7 +5,7 @@ var myCloset = 'Extra coats in the back';
 function myApartment() {
 	var myDog = 'Nikko';
 	var mycoffeeMaker = 'Aeropress';
-	var apartmentFrontDoor = 'Blue with a silver lock';
+	var apartamentFrontDoor = 'Blue with a silver lock';
   var apartmentLaundryCode = 4927;
 
   // Do not edit this console.log, and make sure to keep it inside the myApartment function.
@@ -14,4 +14,4 @@ function myApartment() {
 }
 
 // Do not edit this console.log, and make sure to keep it outside the myApartment function.
-console.log('The apartment is located at ' + apartmentAddress + ' and has a front door with a ' + apartmentFrontDoor.toLowerCase() + '. The access code is ' + apartmentLaundryCode.toString() + '.');
+console.log('The apartment is located at ' + apartmentAddress + ' and has a front door with a ' + apartamentFrontDoor.toLowerCase() + '. The access code is ' + apartmentLaundryCode.toString() + '.');

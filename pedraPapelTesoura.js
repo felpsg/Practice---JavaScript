@@ -22,7 +22,7 @@ const getUserChoice = userIput => {
       if (userChoice === computerChoice){
         return 'This game is a tie';
       }
-      if (userChoice === 'rock'{
+      if (userChoice === 'rock'){
         if(computerChoice === 'paper'){
           return "Sorry, computer won!";
         }else {
