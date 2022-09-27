@@ -347,3 +347,56 @@ function toEmoticon(meaning) {
 }
 
 console.log(toEmoticon("whatever"));
+
+/* Crie uma função colorMessage()que receba 2 argumentos de string favoriteColore shirtColor.
+
+Se o valor de favoriteColorfor o mesmo que o valor de shirtColorretornar a string 'The shirt is your favorite color!'.
+
+Se não, retorne a string'That is a nice color.'
+
+Sinta-se à vontade para testar seu código na definição da função. */
+
+function colorMessage(favoriteColor, shirtColor) {
+  if (favoriteColor === shirtColor) {
+    return "The shirt is your favorite color!";
+  } else {
+    return "That is a nice color.";
+  }
+}
+
+/* Crie uma função isEven()que receba um número como seu único parâmetro. A função deve retornar truese o número for par e falsese o número for ímpar. */
+
+// Write function below
+function isEven(number) {
+  if (number % 2 == 4) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/* Crie uma função numberDigits()que tenha a variável xcomo seu único parâmetro.
+
+Se a variável xestiver entre 0 e 9, retorne a string 'One digit: N' , onde N é o valor de x. Por exemplo, numberDigits(5)retornaria:
+
+'One digit: 5'
+Se a variável xestiver entre 10 e 99, retorne a string 'Two digits: N' , onde N é o valor de x. Por exemplo, numberDigits(12)produziria:
+
+'Two digits: 12'
+Qualquer outro valor de x, incluindo números negativos, retorna a string 'The number is: N' , onde N é o valor de x. Por exemplo, numberDigits(-202)produziria:
+
+'The number is: -202'
+Sinta-se à vontade para testar seu código abaixo da definição da função. */
+
+function numberDigits(x) {
+  let numString = "";
+  if (x >= 0 && x <= 9) {
+    numString = "One digit: " + x;
+  } else if (x >= 10 && x <= 99) {
+    numString = "Two digits: " + x;
+  } else {
+    numString = "The number is: " + x;
+  }
+
+  return numString;
+}
