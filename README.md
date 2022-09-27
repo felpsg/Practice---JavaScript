@@ -1,2 +1,1 @@
-#Projetos JavaScript
-Exercicios e projetos realizado em JavaScrit, todos codigos realizados para estudo.
+Exércicios e projetos realizado em JavaScrit, todos códigos realizados para fins didáticos.
