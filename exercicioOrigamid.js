@@ -1,66 +1,61 @@
-// Crie uma função para verificar se um valor é Truthy
-function istrue(dado) {
-  return !!dado;
+// Crie um objeto com os seus dados pessoais
+// Deve possui pelo menos duas propriedades nome e sobrenome
+var pessoa = {
+  nome: 'Felipe',
+  idade: 28,
+  profissão: 'Engenheiro'
 }
-console.log(istrue(null))
-
-// Crie uma função matemática que retorne o perímetro de um quadrado
-// lembrando: perímetro é a soma dos quatro lados do quadrado
-
-function perimetroQuadrado() {
-  return lado * 4;
-}
-
-// Crie uma função que retorne o seu nome completo
-// ela deve possuir os parâmetros: nome e sobrenome
-let nome = 'Felipe';
-let sobrenome = 'Gustavo Alves Gonçalves';
-
-function nomeCompleto(nome, sobrenome) {
-  return nome + ' ' + sobrenome;
-}
-
-console.log(nomeCompleto(nome, sobrenome));
+console.log(pessoa.nome.idade);
 
 
-// Crie uma função que verifica se um número é par
 
-function isEven(numero) {
-  var modulo = numero % 2;
-  if (modulo === 0) {
-    return true;
-  } else {
-    return false;
+var quadrado = {
+  lados: 4,
+  area: function (lado) {
+    return lado * lado;
+  },
+
+  perimetro(lado) {
+    return this.lados * lado;
   }
 }
-console.log(isEven(52));
+console.log(quadrado.area(6));
+console.log(quadrado.perimetro(8));
 
-// Crie uma função que retorne o tipo de
-// dado do argumento passado nela (typeof)
 
-function tipoDeDado(dado) {
-  return typeof dado;
+
+var menu = {
+  width: 800,
+  height: 50,
+  backgroundColor: '#ffff',
 }
-console.log(tipoDeDado(20));
 
+//crie um objeto com os seus dados pessoais
+//deve possuir pelo menos duas propriedades nome e sobrenome.
 
-// addEventListener é uma função nativa do JavaScript
-// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
-// utilize essa função para mostrar no console o seu nome completo
-// quando o evento 'click' ocorrer.
-
-addEventListener('click', function () {
-  console.log('Felipe Gonçalves')
-});
-
-// Corrija o erro abaixo
-
-var totalPaises = 100;
-function precisoVisitar(paisesVisitados) {
-  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+var dadosPessoais = {
+  nome: 'Felipe',
+  sobrenome: 'Gonçalves',
+  idade: 29,
 }
-function jaVisitei(paisesVisitados) {
-  var totalPaises = 193;
-  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+
+dadosPessoais.nomeCompleto = function () {
+  return `${this.nome} ${this.sobrenome}`;
 }
-console.log(precisoVisitar(100));
+
+
+/* Crie um objeto de um cachorro que represente um labrador preto, com 10 anos, que late ao ver um homem. */
+
+var cachorro = {
+  raça: 'labrador',
+  cor: 'preto',
+  idade: 10,
+  latir(pessoa) {
+    if (pessoa === 'homem') {
+      return 'Latir';
+    } else {
+      return 'nada'
+    }
+  }
+}
+console.log(cachorro.latir('mulher'));
