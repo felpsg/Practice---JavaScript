@@ -50,8 +50,8 @@ function performOperation(secondInteger, secondDecimal, secondString) {
   const firstString = 'HackerRank ';
 
   // Solução
-  console.log(firstInteger * firstDecimal);
-  console.log(firstDecimal + parseFloat(secondDecimal));
+  console.log(firstInteger + Number(secondInteger));
+  console.log(firstDecimal + Number(secondDecimal));
   console.log(firstString + secondString);
 }
 
