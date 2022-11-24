@@ -1,5 +1,5 @@
 //HIGHER-ORDER FUNCTIONS
-//Functions as Parameters
+//Functions as Parameter
 
 const addTwo = (num) => {
   return num + 2;
