@@ -73,3 +73,18 @@ console.log("My name is:" + " " + mustarda.name, "E minha idade é:" + mustarda.
 
 let calculator = new Calculator();
 calculator.read; */
+
+
+
+/* function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function () {
+    this.value += +prompt("Qual número deseja adicionar?");
+  };
+};
+
+let accumulator = new Accumulator(0);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value); */
+
