@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url(./img/calcu1.jpg);
+  background-repeat: no-repeat, no-repeat;
+  height: 46.4vw;
+  color: #fff;
+  font-family: Kenia;
+}
+
+.calculadora {
+  position: absolute;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.btn button {
+  width: 67px;
+  height: 67px;
+  color: #fff;
+  background-color: rgb(43, 42, 42);
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.resultado {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#resultado {
+  background-color: #fff;
+  width: auto;
+  height: 50px;
+}
+
+.btn .itemIgual {
+  height: 6.6rem;
+}
+
+.btn .itemIgual {
+  background-color: rgb(249, 229, 10);
+}
+
+.btn .btn0 {
+  width: 6.9rem;
+  margin-top: 1px;
+}
+
+@media screen and (min-width: 1600px) {
+  .background {
+    background-image: url(./img/calc.jpg);
+    background-repeat: no-repeat, no-repeat;
+  }
+  .background {
+    height: 36.3vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./img/calc.jpg") no-reapt;
+  }
+
+  .resultado {
+    font-size: 1.5rem;
+  }
+  table {
+    margin: -15px;
+  }
+  button {
+    margin: -1px;
+    border: 0.1px solid #fff;
+  }
+  button.btn0 {
+    width: 6.9rem;
+    margin-top: 1px;
+  }
+  .resultado h1 {
+    margin-top: 1rem;
+  }
+}
