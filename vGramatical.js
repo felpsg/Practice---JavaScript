@@ -6,56 +6,39 @@ let unnecessaryWord = "literally";
 let misspelledWord = "beautifull";
 let badWord = "freaking";
 
+//console.log(storyWorlds);
+
 let count = 0;
-storyWords.forEach(function (word) {
+storyWords.forEach((word) => {
   count++;
 });
 console.log(count);
 
-storyWords = storyWords.filter(function (word) {
-  return word !== unnecessaryWord;
-});
-
-
-storyWords = storyWords.map((word) => {
-  return word === misspelledWord ? 'beautiful' : word;
-});
-
-/* storyWords = storyWords.map(function (word) {
-  if (word === misspelledWord) {
-    return 'beautiful';
-  } else {
+storyWords = storyWords.filter((word) => {
+  if (word !== unnecessaryWord) {
     return word;
   }
-}); */
+});
 
-/* let badWordIndex = storyWords.findIndex(function (word) {
-  return word === badWord;
-}); */
+storyWords = storyWords.map((word) => {
+  return word === misspelledWord ? "beautiful" : word;
+});
+
 let badWordIndex = storyWords.findIndex((word) => {
   return word === badWord;
 });
-storyWords[78] = 'really';
 
-/* lengthCheck = storyWords.every(function (word) {
-  if (word < 10) {
-    return;
-  }
-}); */
+storyWords[78] = "really";
 
-lengthCheck = storyWords.every((word) => { word < 10; });
+let lengthCheck = storyWords.every((word) => {
+  return word <= 10;
+});
+console.log(lengthCheck);
 
 storyWords.forEach((word) => {
-  word.length > 10 && console.log(word);
-
+  if (word.length > 10) return console.log(word);
 });
 
-/* storyWords.forEach(function (word) {
-  return word.length > 10 && console.log(word);
-}); */
-
-
-console.log(lengthCheck);
-console.log(badWordIndex);
 console.log(storyWords.join(" "));
-
+console.log(badWordIndex);
+//console.log(story);
