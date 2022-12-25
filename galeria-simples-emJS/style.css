@@ -17,3 +17,24 @@ img {
   gap: 10px;
   margin-bottom: 10px;
 }
+
+#galeria ul li img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+
+#lightbox button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#lightbox button:hover {
+  color: lightgrey;
+}
